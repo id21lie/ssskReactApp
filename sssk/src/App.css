@@ -1,0 +1,738 @@
+/* =====================================
+   Universal
+======================================== */
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Verdana", sans-serif;
+  margin: 0;
+}
+
+
+
+/*Text elements*/
+h1,h2,h3,p{
+  font-family: "Verdana", sans-serif;
+}
+
+p {
+  font-family: "Verdana", sans-serif;
+  padding:0;
+  margin:0;
+}
+
+h1 {
+  font-family: "Verdana", sans-serif;
+  text-align:center;
+
+}
+
+h4{
+  font-family: fantasy;
+}
+
+#draggable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+}
+
+
+
+/*Top-left logo element*/
+.logo-image{
+  width:5%;
+  height: auto;
+  margin-left:10%;
+  background-color: red;
+}
+
+header nav {
+	text-align: right;
+}
+
+header nav ul {
+
+  display: flex;
+  float: right;
+  overflow: auto;
+
+  justify-content: space-evenly;
+  width: 80%;
+  font-family: "Verdana", sans-serif;
+}
+
+header nav ul li {
+	display: inline-block;
+	list-style-type: none;
+
+}
+
+header nav ul li a {
+  flex:1;
+  text-align: center;
+  /*float:left;*/
+  color: black;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 12%;
+}
+
+
+
+.hideORshow{
+  float: right;
+  margin: 1%;
+  background-color: white;
+  border: solid grey;
+  color: grey;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 20%;
+  border-radius: 10%;
+}
+
+/*Bottom bar element*/
+.bottom-bar{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #F0F0F0;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.bar-contact, .bar-klubblokal{
+  width: 50%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+
+.navButtons{
+  margin: auto;
+  width: 80%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.navButtons a{
+
+  width: 50px;;
+  display: block;
+  position: absolute;
+  margin-left:76%;
+
+}
+
+.loadPage{
+  width: 100%;
+  height: 2500px;
+  position: absolute;
+  background-color:white;
+  z-index: 99;
+  justify-content: center;
+}
+
+.loadPage img, .loadPage h3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  color: rgba(206, 4, 15, 0.8);
+  font-family: fantasy;
+  font-size: 25px;
+  width: 40%;
+}
+
+.loadPage img{
+  width: 30%;
+  margin-top: 3%;
+}
+
+
+/* =====================================
+   index.html
+======================================== */
+
+/*Header element*/
+.headerPic{
+  width: 100%;
+  padding-bottom: 40%;
+  background-image: url("pic/header2.jpeg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.header-text h1{
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  color: #ce040f;
+  font-family: fantasy;
+}
+
+.header-text h3{
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  color: #ce040f;
+  font-family: fantasy;
+}
+
+
+
+
+button {
+  background-color: white;
+  border: solid black;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 20%;
+  padding: 1%;
+  border-radius: 10px;
+  margin: 3%;
+}
+
+.color-container{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  border: solid 5px;
+}
+
+.navButtons button:hover{
+  background-color: #ddd;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.newInfo{
+  display:flex;
+  margin-top: 5%;
+  justify-content: space-evenly;
+}
+
+/*New members element*/
+.newMembers{
+  width: 50%;
+  position: flex;
+  float: right;
+  text-align: justify;
+
+  padding: 3%;
+  justify-content: center;
+  background-color: #F0F0F0;
+  border-radius: 8px;
+}
+
+.newMembers h2{
+  width: 100%;
+  text-align:center;
+}
+
+.newMembers p{
+  width: 100%;
+}
+
+.newMembers button {
+  background-color: #ce040f;
+  opacity: 85%;
+  flex:1;
+  border: none;
+  color: white;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 5%;
+  margin-left: 12%;
+  border-radius: 8px;
+}
+
+.newMembers button:hover{
+  background-color: #ddd;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+/*Notification element*/
+.notiser {
+  float: left;
+  width: 30%;
+  height: auto;
+  font-family: "Verdana", sans-serif;
+  justify-content: space-evenly;
+}
+
+.not{
+  border-bottom: dotted;
+  display: block;
+}
+.not:hover{
+  border-bottom: solid;
+}
+
+/*Big centered menu element*/
+.big-menu{
+  display:flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.big-menu img{
+  width: 35%;
+  height: auto;
+}
+
+.big-menu p{
+  text-align: justify;
+  margin: 3%;
+}
+
+/*Big-menu components*/
+.help, .about, .report {
+  width: 23%;
+  margin: 5%;
+  margin-top: -5%;
+}
+
+.help:hover, .about:hover, .report:hover{
+  transition: all 0.2s ease-in-out;
+  border-top: solid;
+  border-width: 0.5em;
+}
+/* =====================================
+   login
+======================================== */
+
+.login-page{
+  margin-top: 3%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  background-image: url(pic/login6.jpeg);
+  background-size: cover;
+  padding: 3%;
+}
+
+.login-page input{
+  padding: 2%;
+  margin: 1%;
+  border-radius: 10px;
+}
+
+.login-page label{
+  margin: auto;
+  margin-top: 5%;
+  width: 100%
+}
+
+.login-page button{
+  background-color: #ce040f;
+  opacity: 85%;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 40%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+
+.login-page a{
+  background-color: white;
+  opacity: 85%;
+  border: solid #1A8BCD;
+  color: #1A8BCD;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 40%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.form{
+  padding: 6%;
+  margin: auto;
+  display: grid;
+  background-color: rgba(255,255,255);
+  width: 40%;
+  border-radius: 10px;
+  margin-bottom: 3%;
+}
+
+#register{
+  text-align: center;
+}
+
+#register button{
+  margin: auto;
+  margin-top: 3%;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top:6%;
+}
+
+/* =====================================
+   weather
+======================================== */
+
+.weather-container{
+  display: grid;
+  margin-bottom: 3%;
+}
+
+.weather-maps {
+
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.weather-maps img{
+  width: 30%;
+}
+
+.warnings ul{
+  background: rgba(206, 4, 15, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.icereport ul {
+  background: #DCE8EF;
+
+  padding: 20px;
+  border-radius: 8px;
+}
+
+ul li {
+  background: white;
+  color: black;
+  margin: 5px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.weather-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.warnings, .icereport{
+  float: right;
+  width: 40%;
+  height: auto;
+  font-family: "Verdana", sans-serif;
+}
+
+.ice img{
+  width: 40%;
+}
+
+.ice{
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.ice-videos{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ice-videos h4{
+  font-family: "Verdana", sans-serif;
+  margin-bottom: -5%;
+}
+
+/* =====================================
+   tours
+======================================== */
+
+.main-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+  padding-bottom: 5%;
+  margin: 2em auto;
+}
+
+
+
+.groups{
+  background-color: #F0F0F0;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  display:flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.groups img{
+  width: 50%;
+  height: auto;
+}
+
+.groups p{
+  margin: 10%;
+  text-align: center;
+}
+
+.tour {
+  background-color: #DCE8EF;
+  max-width: 100%;
+  position:relative;
+  padding: 2em 1em;
+  border-radius: 0.25em;
+  z-index:1;
+}
+
+.tour p, .tour h3{
+  text-align: center;
+}
+
+.tour button {
+  opacity: 85%;
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 50%;
+
+  padding: 2%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  background-color: #F0F0F0;
+  border-radius: 8px;
+}
+
+button:hover{
+  background-color: #ddd;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.tour img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100px;
+}
+
+
+/* =====================================
+   event
+======================================== */
+
+.event {
+  border-collapse: collapse;
+  width: 95%;
+  margin-left: 3%;
+}
+
+#input, #event-p{
+  margin-left: 3%;
+  border-radius: 3%;
+}
+
+
+
+.event td, .event th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.event tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.event tr:hover {
+  background-color: #ddd;
+}
+
+.event th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ce040f;
+  color: white;
+}
+
+.eventpic-container{
+  width: 100%;
+  display: flex;
+}
+
+.eventpic-container img{
+  width: 20%;
+}
+
+
+
+
+
+/*a {
+  color: #232323;
+  text-decoration: none;
+}*/
+
+
+
+
+
+/* =====================================
+   Mobile version
+======================================== */
+
+@media only screen and (max-width: 700px) {
+  .menu{
+    display: none;
+  }
+
+  .navButtons button{
+    width: 40%;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .hideORshow{
+    width: 40%;
+  }
+
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    padding: 16px 18px;
+    color: white;
+    height:100%;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+
+    background: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    font-family: fantasy;
+    background-color: #ce040f;
+    color: white;
+  }
+
+  .form{
+    width: 80%;
+  }
+
+
+  .logo-image{
+    display: none;
+  }
+
+  .newMembers, .notiser{
+    display: grid;
+    width: 88%;
+
+  }
+
+  .weather-maps, .weather-list, .ice-videos{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+
+  .warnings, .icereport{
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .ice-videos video{
+    width: 100%;
+  }
+
+  .weather-maps img{
+    width:80%;
+    margin: auto;
+  }
+
+  .form p, .form button, .form a{
+    font-size: 10px;
+  }
+
+  .newMembers button{
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .header{
+    display: none;
+  }
+
+  .groups h2, .groups p{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px,  min-width: 700px){
+  .header h1{
+    font-size: 20px;
+  }
+
+  .header h3{
+    margin-bottom: 30%;
+    font-size: 10px;
+  }
+
+}
+
+@media only screen and (min-width: 700px){
+  .topnav{
+    display: none;
+  }
+}
